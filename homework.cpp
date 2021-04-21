@@ -12,6 +12,9 @@ class doubleList {
 	int size;
 public:
 
+
+
+
 	void MoveToBegin(node* ptr) {
 		ptr->prev->next = ptr->next;
 		ptr->next->prev = ptr->prev;
