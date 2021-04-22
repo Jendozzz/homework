@@ -46,7 +46,7 @@ public:
 	}
 	list_iterator begin() {
 		return  list_iterator(head);
-	}
+	} 
 
 	list_iterator end() {
 		return  list_iterator(tail);

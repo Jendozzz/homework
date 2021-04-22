@@ -1,27 +1,19 @@
-#include "example_list_iterator.h"
+//#include "example_list_iterator.h"
+//#include "dlist.h"
+#include "vector.h"
+#include <vector>
 #include <iostream>
+#include <list>
 
 
 int main() {
 
-	list<int> tmp;
-	tmp.insert(1);
-	tmp.insert(2);
-	tmp.insert(3);
-	auto begin = tmp.begin();
-	auto end = tmp.end();
 	
-
-	while (begin != end) {
-		std::cout << *begin << std::endl;
-		++begin;
+	std::vector<int> tmp(1);
+	tmp.push_back(3);
+	tmp.insert(tmp.begin(), 5);
+	for (auto i = tmp.rbegin(); i != tmp.rend(); ++i) {
+		std::cout  << * i << std::endl;
 	}
-
-	for (auto i = tmp.begin(); i != tmp.end(); ++i) {
-		std::cout << *i << std::endl;
-	}
-
-	for (auto& item : tmp) { //for each
-		std::cout << item << std::endl;
-	}
+	
 }

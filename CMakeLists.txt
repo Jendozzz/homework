@@ -20,5 +20,4 @@ endif()
 
 #add_executable(first "homework.cpp")
 #add_executable(second "homework2.cpp")
-add_executable(main "main.cpp" "example_list_iterator.h")
-add_executable(main "dlist.cpp") 
+add_executable(main "main.cpp" "example_list_iterator.h" "dlist.h" "array.h" "vector.h")
