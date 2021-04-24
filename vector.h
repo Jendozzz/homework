@@ -27,7 +27,7 @@ public:
 	vector(size_t size) : size(0), capacity(size* COEF_CAPACITY) {
 		data = new T[capacity];
 		for (size_t i =0 ; i < size; ++i) {
-			data[i] = T();
+			data[i] = T(); 
 		}
 	}
 
@@ -71,6 +71,12 @@ public:
 	}
 	T* end() {
 		return data + size;
+	}
+	T* rbegin() {
+		return data + size-1;
+	}
+	T* rend() {
+		return data-1;
 	}
 };
 
